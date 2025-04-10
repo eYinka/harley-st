@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+	--color-primary: #31e4c4;
+	--color-primary-alt: #2084d0;
+	--color-primary-dark: #135269;
+	--color-secondary: #1eab92;
+	--color-gray-500: #69858d;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer utilities {
+	.gradient_bg {
+		background-image: linear-gradient(240deg, #31e4c4 30%, #2084d0 70%);
+	}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+	.container {
+		@apply w-11/12 lg:w-full;
+	}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	.search-shadow {
+		box-shadow: 0 0 50px 0 rgba(135, 175, 225, 0.4);
+	}
+
+	.review-shadow {
+		box-shadow: 0 10px 80px hsla(216, 9%, 69%, 0.2);
+	}
+
+	.specialist-shadow {
+		box-shadow: 0 0 80px 2px rgba(0, 0, 0, 0.063);
+	}
+
+	.card-shadow {
+		box-shadow: 0 10px 80px 0 hsla(216, 9%, 69%, 0.26);
+	}
 }
