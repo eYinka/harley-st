@@ -9,8 +9,8 @@ export default function ContactBanner() {
 	return (
 		<section className="relative">
 			<TopCurve />
-			<div className="bg-[url('/images/banner-section-bg.webp')] bg-cover bg-no-repeat bg-right relative py-16">
-				<div className="container mx-auto py-10">
+			<div className="bg-[url('/images/463bfd86-harley-street-ultrasound-team-are-here-to-help-bg.png')] bg-cover bg-no-repeat bg-right relative py-16">
+				<div className="container max-w-[1140px] mx-auto py-10">
 					<GradientTitle
 						subtitle="Here To Help"
 						subtitleClassNames="text-3xl lg:text-4xl lg:leading-16 text-center"
