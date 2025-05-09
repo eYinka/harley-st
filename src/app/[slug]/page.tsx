@@ -18,9 +18,7 @@ import { notFound } from "next/navigation";
 import type { Theme } from "@/types/colors";
 
 interface PageProps {
-	params: {
-		slug: string;
-	};
+	params: Promise<{ slug: string }>;
 }
 
 export default async function Page(props: PageProps) {
