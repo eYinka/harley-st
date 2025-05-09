@@ -11,6 +11,7 @@ interface CoreValuesProps {
 }
 
 export default function CoreValues(props: CoreValuesProps) {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const { title, content, values } = props;
 	return (
 		<section className="container mx-auto">

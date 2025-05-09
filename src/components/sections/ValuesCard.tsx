@@ -1,10 +1,5 @@
 import GradientTitle from "@/components/core/GradientTitle";
 import Image from "next/image";
-import MedicalCrossIcon from "@/components/icons/MedicalCrossIcon";
-import CalendarIcon from "@/components/icons/CalendarIcon";
-import ThumbsUpIcon from "../icons/ThumbsUpIcon";
-import HeartHandsIcon from "../icons/HeartHandsIcon";
-import HeartIcon from "../icons/HeartIcon";
 import GradientButton from "../core/GradientButton";
 import ReviewsCard from "../core/ReviewsCard";
 import type { Theme } from "@/types/colors";
