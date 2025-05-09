@@ -1,20 +1,62 @@
+@import "swiper/css";
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
 	--color-primary: #31e4c4;
 	--color-primary-alt: #2084d0;
 	--color-primary-dark: #135269;
+	--color-primary-400: #083444;
+	--color-primary-500: #015656;
+	--color-primary-600: #4d8686;
 	--color-secondary: #1eab92;
+	--color-blue-100: #3f97ff;
+	--color-blue-200: #26a7cd;
+	--color-blue-300: #ecf5ff;
+	--color-blue-400: #2abbe9;
+	--color-blue-500: #edf7fa;
+	--color-blue-600: #16a6b0;
+	--color-blue-700: #3591b8;
 	--color-gray-500: #69858d;
+	--color-pink-100: #ffedf4;
+	--color-pink-200: #8d697a;
+	--color-pink-300: #ff4794;
+	--color-red-100: #fc4a96;
+	--color-red-200: #4b0c27;
+	--color-orange-100: #ff843f;
+	--color-orange-200: #fcb000;
+	--color-orange-300: #e1934a;
+	--color-orange-400: #fff3ec;
+	--color-brown-100: #84614d;
+	--color-brown-200: #47200a;
+	--color-gradient-100: #2084d0;
+	--color-gradient-200: #31e4c4;
+	--color-gradient-300: #9820d0;
+	--color-gradient-400: #e43192;
+	--color-gradient-500: #edb72d;
+	--color-gradient-600: #ff843f;
+	--color-gradient-700: #009e9e;
 }
 
 @layer utilities {
+	.container {
+		@apply w-11/12 lg:w-full;
+	}
+
 	.gradient_bg {
 		background-image: linear-gradient(240deg, #31e4c4 30%, #2084d0 70%);
 	}
 
-	.container {
-		@apply w-11/12 lg:w-full;
+	.gradient_bg_pink {
+		@apply bg-gradient-to-r from-gradient-300 from-30% to-gradient-400 to-70%;
+	}
+
+	.gradient_bg_orange {
+		@apply bg-gradient-to-r from-gradient-500 from-30% to-gradient-600 to-70%;
+	}
+
+	.gradient_bg_green {
+		@apply bg-gradient-to-r from-gradient-200 from-30% to-gradient-700 to-70%;
 	}
 
 	.search-shadow {
@@ -31,5 +73,22 @@
 
 	.card-shadow {
 		box-shadow: 0 10px 80px 0 hsla(216, 9%, 69%, 0.26);
+	}
+
+	strong,
+	b {
+		font-weight: 600;
+	}
+	.swiper-wrapper {
+		width: 100%;
+		max-width: 100%;
+		max-height: 100vh;
+		min-height: 0;
+		min-width: 0;
+	}
+
+	.service_card ul li:before {
+		content: "✔ ";
+		font-size: 16px;
 	}
 }

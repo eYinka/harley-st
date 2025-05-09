@@ -15,19 +15,19 @@ export default function Header() {
 
 	const links = [
 		{
-			href: "/female",
+			href: "/private-female-ultrasound-scan-services",
 			label: "Female",
 		},
 		{
-			href: "/male",
+			href: "/private-male-ultrasound-scan-services",
 			label: "Male",
 		},
 		{
-			href: "/children",
+			href: "/private-paediatric-ultrasound-services",
 			label: "Children",
 		},
 		{
-			href: "/muscle-joints",
+			href: "/private-muscle-joints-ultrasound-scan-services",
 			label: "Muscle & Joints",
 		},
 		{

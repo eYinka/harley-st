@@ -6,8 +6,15 @@ import GradientTitle from "@/components/core/GradientTitle";
 import DoctorCard from "@/components/core/DoctorCard";
 import "swiper/css";
 import "swiper/css/pagination";
+import type { Theme } from "@/types/colors";
 
-export default function Specialists() {
+interface SpecialistsProps {
+	theme?: Theme;
+}
+
+export default function Specialists(props: SpecialistsProps) {
+	const { theme } = props;
+
 	const team = [
 		{
 			id: 1,
@@ -67,11 +74,12 @@ export default function Specialists() {
 					subtitle="Meet Our"
 					titleClassNames="text-center text-3xl lg:text-5xl leading-14"
 					subtitleClassNames="text-center text-2xl lg:text-3xl"
+					gradientType={theme}
 				/>
 				<div className="max-w-[930px]">
 					<p className="text-xl text-primary-dark mt-4 tracking-wide mb-4">
 						The team at Harley Street Ultrasound Group is made up of{" "}
-						<strong>Specialist </strong> Consultants and{" "}
+						<strong>Specialist Consultants </strong> and{" "}
 						<strong>Specialist Sonographers</strong> you can rely upon. They are among
 						the best in the industry.
 					</p>
@@ -82,7 +90,7 @@ export default function Specialists() {
 					</p>
 				</div>
 			</div>
-			<div className="flex justify-center bg-white pr-3">
+			<div className="flex justify-center bg-white">
 				<Swiper
 					modules={[Autoplay, Pagination]}
 					spaceBetween={"50"}
@@ -96,9 +104,23 @@ export default function Specialists() {
 					pagination={{
 						clickable: true,
 					}}
+					breakpoints={{
+						0: {
+							slidesPerView: 1,
+							centeredSlides: true,
+							spaceBetween: 0,
+						},
+						640: {
+							slidesPerView: "auto",
+							slidesOffsetBefore: 50,
+						},
+					}}
 				>
 					{team.map((member) => (
-						<SwiperSlide key={member.id} className="w-full max-w-[330px] py-16">
+						<SwiperSlide
+							key={member.id}
+							className="w-full md:max-w-[330px] py-16 px-6 md:px-0"
+						>
 							<DoctorCard {...member} />
 						</SwiperSlide>
 					))}

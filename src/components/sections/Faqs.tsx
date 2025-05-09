@@ -1,7 +1,14 @@
 import GradientTitle from "@/components/core/GradientTitle";
 import FaqCard from "../core/FaqCard";
+import type { Theme } from "@/types/colors";
 
-export default function Faqs() {
+interface FaqProps {
+	theme?: Theme;
+}
+
+export default function Faqs(props: FaqProps) {
+	const { theme } = props;
+
 	const faqs = [
 		{
 			id: 1,
@@ -28,6 +35,7 @@ export default function Faqs() {
 			<GradientTitle
 				subtitle="All Your Answers in One Place"
 				subtitleClassNames="text-3xl lg:text-4xl lg:leading-16 text-center"
+				gradientType={theme}
 			/>
 			<div className="flex flex-wrap justify-center gap-x-8 gap-y-24 pt-28">
 				{faqs.map((faq) => (

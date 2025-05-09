@@ -2,8 +2,34 @@ import GradientTitle from "@/components/core/GradientTitle";
 import ArticleCard from "../core/ArticleCard";
 import GradientButton from "../core/GradientButton";
 import Link from "next/link";
+import type { Theme } from "@/types/colors";
+import clsx from "clsx";
 
-export default function Articles() {
+interface ArticlesProps {
+	theme?: Theme;
+}
+
+export default function Articles(props: ArticlesProps) {
+	const { theme } = props;
+
+	let textClasses;
+
+	switch (theme) {
+		case "pink":
+			textClasses = "text-pink-200";
+			break;
+		case "green":
+			textClasses = "text-primary-600";
+			break;
+		case "orange":
+			textClasses = "text-brown-200";
+			break;
+
+		default:
+			textClasses = "text-gray-500";
+			break;
+	}
+
 	const articles = [
 		{
 			id: 1,
@@ -70,8 +96,12 @@ export default function Articles() {
 	return (
 		<section className="container mx-auto">
 			<div className="max-w-[800px] mx-auto">
-				<GradientTitle subtitle="Latest Articles" subtitleClassNames="text-3xl" />
-				<p className="text-xl text-gray-500 tracking-wide leading-loose mt-4">
+				<GradientTitle
+					subtitle="Latest Articles"
+					subtitleClassNames="text-3xl"
+					gradientType={theme}
+				/>
+				<p className={clsx("text-xl  tracking-wide leading-loose mt-4", textClasses)}>
 					We provide insight on a range of topics, including the latest news affecting our
 					practice.
 				</p>

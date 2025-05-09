@@ -5,8 +5,16 @@ import HealthMonitorFilledIcon from "@/components/icons/HealthMonitorFilledIcon"
 import Image from "next/image";
 import TopCurve from "./TopCurve";
 import BottomCurve from "./BottomCurve";
+import type { Theme } from "@/types/colors";
 
-export default function Banner() {
+export interface BannerProps {
+	theme?: Theme;
+	bgImage: string;
+}
+
+export default function Banner(props: BannerProps) {
+	const { theme, bgImage } = props;
+
 	const features = [
 		{
 			id: 1,
@@ -27,14 +35,22 @@ export default function Banner() {
 	return (
 		<section className="relative">
 			<TopCurve />
-			<div className="bg-[url('/images/banner-section-bg.webp')] bg-cover bg-no-repeat bg-right relative py-16">
-				<div className="container mx-auto xl:px-14 xl:mx-0 py-10">
+			<div className="relative py-16">
+				<Image
+					src={bgImage}
+					alt="Ultrasound scan images on phone and tablet harley street ultrasound"
+					loading="lazy"
+					fill
+					className="object-cover object-left w-auto h-full"
+				/>
+				<div className="container mx-auto xl:px-14 xl:mx-0 py-10 relative">
 					<div className="flex flex-col xl:w-1/2">
 						<GradientTitle
 							title="At your fingertips"
 							titleClassNames="text-4xl lg:text-6xl"
 							subtitle="Seamless, Secure,"
 							subtitleClassNames="text-2xl lg:text-4xl lg:leading-16"
+							gradientType={theme}
 						/>
 						<p className="text-xl text-gray-500 tracking-wide leading-loose mt-10">
 							We can provide scan images directly to your smartphone, often on the

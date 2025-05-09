@@ -3,12 +3,17 @@ import TopCurve from "@/components/core/TopCurve";
 import GradientTitle from "@/components/core/GradientTitle";
 import SocialIcons from "./SocialIcons";
 
-export default function SocialCta() {
+interface SocialCtaProps {
+	bgImage: string;
+}
+
+export default function SocialCta(props: SocialCtaProps) {
+	const { bgImage } = props;
 	return (
 		<section className="relative py-20">
 			<TopCurve />
 			<Image
-				src={"/images/follow-us-on-social-media-harley-street-ultrasound.png"}
+				src={bgImage}
 				loading="lazy"
 				alt="Follow us on social media"
 				fill

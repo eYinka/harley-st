@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import GradientButton from "../core/GradientButton";
 
-export default function Regulators() {
+interface RegulatorsProps {
+	btnText?: string;
+	btnLink?: string;
+}
+
+export default function Regulators(props: RegulatorsProps) {
+	const { btnText, btnLink } = props;
 	const regulators = [
 		{
 			id: 1,
@@ -74,6 +81,13 @@ export default function Regulators() {
 					</div>
 				</div>
 			</div>
+			{btnLink && btnText && (
+				<div className="flex justify-center mt-6">
+					<Link href={btnLink}>
+						<GradientButton text={btnText} classNames="text-xl" />
+					</Link>
+				</div>
+			)}
 		</section>
 	);
 }

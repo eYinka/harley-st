@@ -7,8 +7,39 @@ import HeartHandsIcon from "../icons/HeartHandsIcon";
 import HeartIcon from "../icons/HeartIcon";
 import GradientButton from "../core/GradientButton";
 import ReviewsCard from "../core/ReviewsCard";
+import type { Theme } from "@/types/colors";
+import clsx from "clsx";
+import Link from "next/link";
 
-export default function FeaturesCard() {
+interface FeaturesCardProps {
+	title: string;
+	subtitle: string;
+	description: TrustedHTML | string;
+	image: string;
+	theme?: Theme;
+	link?: string;
+}
+
+export default function FeaturesCard(props: FeaturesCardProps) {
+	const { title, subtitle, description, image, link, theme } = props;
+
+	let textClasses;
+
+	switch (theme) {
+		case "pink":
+			textClasses = "text-pink-200";
+			break;
+		case "green":
+			textClasses = "text-primary-600";
+			break;
+		case "orange":
+			textClasses = "text-brown-200";
+			break;
+		default:
+			textClasses = "text-primary-dark";
+			break;
+	}
+
 	const features = [
 		{
 			id: 1,
@@ -42,35 +73,45 @@ export default function FeaturesCard() {
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 				<div>
 					<GradientTitle
-						title="Exceptional Care"
+						title={title}
 						titleClassNames="text-4xl lg:text-6xl"
-						subtitle="Nothing But"
+						subtitle={subtitle}
 						subtitleClassNames="text-2xl lg:text-4xl lg:leading-16"
+						gradientType={theme}
 					/>
-					<p className="text-xl text-gray-500 mt-4 tracking-wide">
-						Reassurance and peace of mind are at the heart of everything we do. During
-						your entire experience with us, you will benefit from the very best level of
-						expertise & patient care.{" "}
-					</p>
+					<div
+						className={clsx("text-xl text-gray-500 mt-4 tracking-wide", textClasses)}
+						dangerouslySetInnerHTML={{
+							__html: description,
+						}}
+					/>
 					<ReviewsCard />
 					<div className="grid grid-cols-2 lg:grid-cols-3">
 						{features.map((feature) => {
 							return (
 								<div key={feature.id} className="p-3 flex flex-col">
 									<feature.icon className="size-9 mb-4" />
-									<h3 className="text-base lg:text-lg text-primary-dark">
+									<h3 className={clsx("text-base lg:text-lg text-primary-dark")}>
 										{feature.title}
 									</h3>
 								</div>
 							);
 						})}
-						<div className="flex items-center">
-							<GradientButton text="Learn More" classNames="font-normal" />
-						</div>
+						{link && (
+							<div className="flex items-center">
+								<Link href={link}>
+									<GradientButton
+										text="Learn More"
+										classNames="font-normal"
+										theme={theme}
+									/>
+								</Link>
+							</div>
+						)}
 					</div>
 				</div>
 				<Image
-					src="/images/private-ultrasound-clinic-london-harley-street-ultrasound.png"
+					src={image}
 					alt="Hero Image"
 					width={500}
 					height={500}
