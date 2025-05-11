@@ -9,13 +9,10 @@ import {
 	malePriceList,
 	muscleJointPriceList,
 	pregnancyPriceList,
-	type Service,
 } from "@/lib/data-source";
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import clsx from "clsx";
-import type { Theme } from "@/types/colors";
 import CatChildrenIcon from "../icons/CatChildrenIcon";
 import CatFemaleIcon from "../icons/CatFemaleIcon";
 import CatBreastIcon from "../icons/CatBreastIcon";
