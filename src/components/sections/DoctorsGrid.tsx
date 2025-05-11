@@ -99,7 +99,7 @@ const SpecialistSection = ({
 						key={doctor.slug}
 						name={doctor.name}
 						image={doctor.imageUrl}
-						link={`/doctors/${doctor.slug}`}
+						link={`/our-clinic/our-doctors/${doctor.slug}`}
 						heading={doctor.heading}
 						accreditations={doctor.accreditations}
 					/>

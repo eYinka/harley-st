@@ -32,7 +32,6 @@ export default function Page() {
 				description={pageData.description}
 			/>
 			<Spacer desktopHeight="50px" mobileHeight="50px" />
-
 			<DoctorsGrid doctors={doctors} />
 			<Spacer mobileHeight="80px" desktopHeight="100px" />
 			<Regulators btnLink="#" btnText="Our Doctors" />

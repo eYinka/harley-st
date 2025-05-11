@@ -15,7 +15,6 @@ export default function DoctorCardAlt(props: DoctorCardProps) {
 	return (
 		<div
 			className="w-full mb-2.5 md:mb-7 bg-white rounded-xl card-shadow"
-			data-testid="specialist-card-wrapper"
 		>
 			<article className="relative px-4">
 				<div className="relative flex flex-col w-full  lg:flex-row gap-3 mb-4">
