@@ -29,7 +29,7 @@ export default function GradientTitle(props: GradientTitleProps) {
 			case "pink":
 				return "text-red-200";
 			case "green":
-				return "text-primary-600";
+				return "text-primary-500";
 			case "orange":
 				return "text-brown-200";
 			default:

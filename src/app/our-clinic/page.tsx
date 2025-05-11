@@ -56,7 +56,7 @@ export default function Page() {
 			<Spacer mobileHeight="80px" desktopHeight="100px" />
 			<Faqs theme={theme} />
 			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<ContactBanner theme={theme} bgImage={pageData.bannerImage} />
+			<ContactBanner theme={theme} bgImage={pageData.bannerImage} bottomCurve/>
 			<Spacer mobileHeight="80px" desktopHeight="100px" />
 			<Articles theme={theme} />
 			<Spacer mobileHeight="80px" desktopHeight="100px" />

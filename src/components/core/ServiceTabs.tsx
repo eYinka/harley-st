@@ -53,7 +53,7 @@ export default function ServiceTabs(props: ServiceTabsProps) {
 				</div>
 
 				{services.map((service: Service) => (
-					<div key={service.slug} className="basis-1/3 hidden lg:block">
+					<div key={service.slug} className="basis-1/4 hidden lg:block">
 						<ServiceTab
 							title={service.label}
 							icon={service.icon}

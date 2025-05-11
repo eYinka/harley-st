@@ -25,6 +25,24 @@ export type Service = {
 	items: ServiceItem[];
 };
 
+export type Doctor = {
+	name: string;
+	imageUrl: string;
+	accreditations: string[];
+	slug: string;
+	heading: string;
+	description: string;
+	languages: string[];
+	phone: string;
+	email: string;
+	specialInterests: string[];
+	gmcNumber: string;
+	specialties: {
+		title: string;
+		slug: string;
+	}[];
+};
+
 export const femaleServices: Service[] = [
 	{
 		slug: "general",
@@ -300,6 +318,169 @@ export const maleServices: Service[] = [
 	},
 ];
 
+export const childrenServices: Service[] = [
+	{
+		slug: "neck",
+		label: "Neck",
+		icon: "CatMaleIcon",
+		card_type: "compact",
+		items: [
+			{
+				id: 1,
+				name: "Ovarian Screening",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 2,
+				name: "Lumps & Bumps",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 3,
+				name: "Breast Ultrasound",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 4,
+				name: "Armpit / Axilla",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+		],
+	},
+	{
+		slug: "chest",
+		label: "Chest",
+		icon: "CatMaleIcon",
+		card_type: "compact",
+		items: [
+			{
+				id: 1,
+				name: "Ovarian Screening",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 2,
+				name: "Lumps & Bumps",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 3,
+				name: "Breast Ultrasound",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 4,
+				name: "Armpit / Axilla",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+		],
+	},
+	{
+		slug: "abdomen_pelvic",
+		label: "Abdoment / Pelvic",
+		icon: "CatMaleIcon",
+		card_type: "compact",
+		items: [
+			{
+				id: 1,
+				name: "Ovarian Screening",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 2,
+				name: "Lumps & Bumps",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 3,
+				name: "Breast Ultrasound",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 4,
+				name: "Armpit / Axilla",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+		],
+	},
+	{
+		slug: "muscles_joints",
+		label: "Muscles & Joints",
+		icon: "CatMaleIcon",
+		card_type: "compact",
+		items: [
+			{
+				id: 1,
+				name: "Ovarian Screening",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 2,
+				name: "Lumps & Bumps",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 3,
+				name: "Breast Ultrasound",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 4,
+				name: "Armpit / Axilla",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+		],
+	},
+	{
+		slug: "lumps_bumps",
+		label: "Lumps & Bumps",
+		icon: "CatMaleIcon",
+		card_type: "compact",
+		items: [
+			{
+				id: 1,
+				name: "Ovarian Screening",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 2,
+				name: "Lumps & Bumps",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 3,
+				name: "Breast Ultrasound",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+			{
+				id: 4,
+				name: "Armpit / Axilla",
+				image: "https://images.ctfassets.net/1w1x9dft88u5/1QO9ZaNVbW8RGKkYAJgI3i/7b30a0fdb6eef70898d0684020a64337/2.webp",
+				link: "#",
+			},
+		],
+	},
+];
+
 export const muscleServices: Service[] = [
 	{
 		slug: "muscles_joints",
@@ -524,7 +705,7 @@ export const pageContent = [
 			title: "Scans We Offer",
 			subtitle: "Paediatric Ultrasound",
 		},
-		services: maleServices,
+		services: childrenServices,
 		featuresCard: {
 			title: "Exceptional Care",
 			subtitle: "Nothing But",
@@ -569,5 +750,395 @@ export const pageContent = [
 				"<p>The Harley Street Ultrasound Group are a team of <b>Specialist Consultant Radiology Doctors</b>&nbsp; from leading UK hospitals, providing specialist expertise in private diagnostic ultrasound imaging.</p>",
 			image: "https://images.ctfassets.net/1w1x9dft88u5/1L5tOUH8eDfOdeZFRiWXj2/6de820a89d77bcddfcf7479dc7d59742/private-male-ultrasound-scan-services-harley-street-ultrasound-2.png",
 		},
+	},
+];
+
+export const doctors: Doctor[] = [
+	{
+		name: "Kate Hawtin",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/4z7IjZG4vyTKUGGnS2xZcI/edba60822c1b4effdc6fca47ce4e2b44/our-specialists-kate-hawtin.png",
+		accreditations: ["MA, MBBS, FRCR"],
+		slug: "kate-hawtin",
+		heading:
+			"Dr. Kate Hawtin is a Consultant Radiologist and Joint Breast Imaging Lead at University College London Hospital.\nDr. Kate Hawtin qualified from Cambridge University and Imperial College School of Medicine in 2000, graduating with distinction.",
+		description:
+			"Dr. Kate Hawtin is a Consultant Radiologist and Joint Breast Imaging Lead at University College London Hospital.\nDr. Kate Hawtin qualified from Cambridge University and Imperial College School of Medicine in 2000, graduating with distinction. She obtained Membership of the Royal College of Physicians in 2003 prior to commencing Radiology training at Imperial College NHS Trust, and was awarded Fellowship of the Royal College of Radiologists in 2007. \nShe was appointed as a Consultant Radiologist in 2012, and has specialist expertise in breast and general imaging. She undertakes all aspects of breast imaging including mammographic, ultrasound, MRI and CT diagnostics. She performs all ultrasound and stereotactic breast related procedures, including vacuum excision and breast lesion localisation prior to surgery.\nDr. Kate Hawtin is also joint deputy head of London School of Radiology, having previously been training programme director for the University College Hospital Radiology training scheme, and is enthusiastic about education and training the next generation of Radiologists.",
+		languages: ["English"],
+		specialInterests: ["Breast"],
+		phone: "0203 904 4441",
+		email: "contact@harleystreetultrasound.com",
+		gmcNumber: "4725695",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Dr Hussain Amin",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/OwEbZrbz2N7V4CDgEMEwx/d5f84eb22f6d64ba62361142b68238bd/our-specialists-hussain-amin.png",
+		accreditations: ["MBBS BSc MRCS FRCR"],
+		slug: "hussain-amin",
+		heading:
+			"Dr. Hussain Amin is a Consultant Radiologist at University College of London Hospital with a specialist interest in breast, oncology and general radiology.",
+		description:
+			"Dr. Hussain Amin is a Consultant Radiologist at University College of London Hospital with a specialist interest in breast, oncology and general radiology. Dr. Hussain Amin qualified from Imperial College London School of Medicine in 2012. After completing Foundation Training, Dr. Amin completed his core surgical training obtaining membership to the Royal College of Surgeons of Enlgand in 2015 after which he embarked on a period of training in Urological Surgery. Dr. Amin obtained his Fellowship to the Royal College of Radiologists whilst training in the London Deanery. Dr. Hussain Amin has specialist expertise in breast, oncology and general imaging. He undertakes all aspects of breast imaging including mammography, Ultrasound, MRI and CT diagnostics. He performs all ultrasound and stereotactic breast related procedures including vacuum excision. Dr. Hussain Amin is passionate about teaching and training and is a medical examiner at University College of London School of Medicine as well as an accredited Educational Supervisor. He is also responsible for training specialist trainees in breast imaging at University College London Hospital. Dr. Hussain Amin has published and presented in international radiological and surgical conferences as well as collaborated on national multicentre projects.",
+		languages: ["English", "Arabic"],
+		specialInterests: ["Breast", "Oncology", " General Radiology"],
+		phone: "0203 904 4441",
+		email: "contact@harleystreetultrasound.com",
+		gmcNumber: "7293783",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Dr Shayan Ahmed",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/4xq8t78eGaEI986qiZwEX1/09ac861ce86f2a5fc55f7d1a3390dae1/our-specialists-dr-shayan-ahmed.png",
+		accreditations: ["MBBS, BSc (Hons), FRCR, DFSEM (UK)"],
+		slug: "dr-shayan-ahmed",
+		heading:
+			"Dr Shayan Ahmed is a Consultant Radiologist at Barts Health NHS Trust with a special interest in musculoskeletal and urological imaging. He routinely performs a vast array of general and musculoskeletal diagnostic ultrasound. ",
+		description:
+			"Dr Shayan Ahmed is a Consultant Radiologist at Barts Health NHS Trust with a special interest in musculoskeletal and urological imaging. He routinely performs a vast array of general and musculoskeletal diagnostic ultrasound. He is particularly skilled in performing ultrasound-guided musculoskeletal interventions. Dr Ahmed graduated from Kings College London with a Distinction in 2011 and went on to complete his core Radiology specialist training in the East Anglia region encompassing hospitals in Cambridge, Essex and Bedfordshire. He undertook higher subspecialty training in musculoskeletal and trauma imaging at two internationally renowned institutions – The Royal National Orthopaedic Hospital and Kings College Hospital. More recently, he has successfully completed the Musculosketal Medicine Diploma of the Faculty of Sports of Exercise Medicine, of which he is a diplomatic member. Dr Ahmed regularly teaches on leading musculoskeletal radiology courses, has presented at international conferences and is actively involved in organising national Radiology educational events. He is also passionate about training the future generation of Radiologists. He is a mentor and supervisor to Radiology Registrars within his NHS Trust and oversees their training.",
+		languages: ["English", "Urdu", "Hindi"],
+		specialInterests: ["Musculoskeletal radiology", "Urological Imaging", "General Imaging"],
+		phone: "0203 904 4441",
+		email: "contact@harleystreetultrasound.com",
+		gmcNumber: "7139487",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Ayman Mahfouz",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/3C94ODYagPmmezEBP0nMmC/379885b8808c3ff3c799b9d1c3c9cf21/our-specialists-ayman-mahfouz.png",
+		accreditations: ["MBBS, FRCR"],
+		slug: "ayman-mahfouz",
+		heading:
+			"Dr. Ayman Mahfouz is a Consultant Radiologist at University College of London Hospital (UCLH), his specialist expertise include breast, gynaecology and general radiology imaging.",
+		description:
+			"Dr. Ayman Mahfouz is a Consultant Radiologist at University College of London Hospital (UCLH), his specialist expertise include breast, gynaecology and general radiology imaging.\nDr. Ayman Mahfouz qualified from Barts and the Royal London School of Medicine in 2009. After completing his junior doctor training at Imperial College Healthcare NHS trust, Dr Mahfouz attained his Fellowship at the Royal College of Radiologists whilst training in the East Midlands Deanery.\nDr. Ayman Mahfouz has specialist expertise in breast, gynaecology and general imaging. \nHe undertakes all aspects of breast imaging including mammographic (plain, contrast enhanced and 3D), Ultrasound, MRI and CT diagnostics. He performs all ultrasound and stereotactic breast related procedures including vacuum excision. \nHe also undertakes interpretation of ultrasound, CT and MRI imaging of gynaecological disorders. \nDr. Ayman Mahfouz is a designated appraiser for doctors at UCLH and has previously been elected as a regional representative for doctors in training at the Royal College of Radiologists. He previously held the role as Emergency Imaging Lead for UCLH. He is enthusiastic about education and continues to examine junior doctors at the distinguished Leicester FRCR 2B course.",
+		languages: ["English", "Arabic"],
+		specialInterests: ["Breast", "Gynaecology", "General Imaging"],
+		phone: "0203 904 4441",
+		email: "contact@harleystreetultrasound.com",
+		gmcNumber: "7041035",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Dr Sophie Pattison",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/3gLLzPPl0pPuu4L2zAP900/d568a8695592dc1f3a118d1fb45b8b75/our-specialists-sophie-pattison.png",
+		accreditations: ["BScHons, MBcHB, MRCS, FRCR"],
+		slug: "sophie-pattison",
+		heading:
+			"Dr Sophie Pattison is a Consultant Radiologist at University College London. her specialist expertise include breast imaging Ultrasound, CT and MRI and stereotactic breast related procedures",
+		description:
+			"Dr Sophie Pattison is a Consultant Radiologist at University College London. her specialist expertise include breast imaging Ultrasound, CT and MRI and stereotactic breast related procedures Dr Sophie Pattison is a Consultant Radiologist \xa0She has an NHS practice at University College London Hospital. Dr Pattison trained in medicine at Bristol University. She undertook surgical training which included a period of breast surgery and obtained Membership of the Royal College of Surgeons in 2001. She then became a lecturer in patient safety and subsequently undertook specialist radiological training at University College London Hospital. She was appointed as a Consultant Radiologist in 2014. Dr Pattison is the joint lead for breast radiology at University College London Hospital and is also joint lead for quality and safety in the radiology department. She also undertakes breast screening radiology at North London Breast Screening Service. She undertakes all aspects of breast imaging including Mammography, Ultrasound, MRI and CT diagnostics. She performs all ultrasound and stereotactic breast related procedures including vacuum excision.",
+		languages: ["English"],
+		specialInterests: [" General Radiology", "Breast Radiologist"],
+		phone: "0203 904 4441",
+		email: "contact@harleystreetultrasound.com",
+		gmcNumber: "4406394",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Xin Kowa",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/5jSr77m6YQIPlOJoU88iqL/b523dedebf4c9cd7b29957d2592b4eee/our-specialists-xin-kowa.png",
+		accreditations: ["FRCR, MBBS, BSc (Hons)"],
+		slug: "xin-kowa",
+		heading:
+			"Dr Xin Kowa is a consultant head and neck radiologist at University College London Hospital (UCLH). She has trained and worked in large tertiary centres in London (UCLH, Royal London Hospital and St Bartholomew's Hospital) ",
+		description:
+			"Dr Xin Kowa is a consultant head and neck radiologist at University College London Hospital (UCLH). She has trained and worked in large tertiary centres in London (UCLH, Royal London Hospital and St Bartholomew's Hospital) where she completed her subspecialty fellowship in head and neck imaging in 2020.\nHer multimodality imaging practice of the head and neck region includes benign and malignant pathologies, and sarcomas (for which UCLH is the regional specialist referral centre). In addition, intraoral scanning also forms part of her diagnostic sonographic work. She provides ultrasound-guided fine needle aspiration and core biopsy procedures of:\n- Thyroid\n- Lymph nodes\n- Major salivary glands\n- Soft tissue lumps and bumps of the head, neck and face",
+		languages: ["English"],
+		specialInterests: ["Head and Neck"],
+		phone: "0203 904 4441",
+		email: "contact@harleystreetultrasound.com",
+		gmcNumber: "7419419",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Dr Trevor Gaunt",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/6H4F3eco4xylplOso0dSP8/13b7fee60a5d812aecd5a07199d3fcde/our-specialists-trevor-gaunt.png",
+		accreditations: ["BSc (Hons), MBBS, FRCR"],
+		slug: "trevor-gaunt",
+		heading:
+			"Dr Trevor Gaunt is a Specialist Paediatric Consultant Radiologist at University College London Hospital.",
+		description:
+			"Dr Trevor Gaunt is a Specialist Paediatric Consultant Radiologist at University College London Hospital. Dr Trevor Gaunt is a Consultant Paediatric Radiologist at University College London Hospitals. Dr Gaunt completed his Radiology training in London with fellowships at both Evelina London Children's Hospital, and Great Ormond Street Hospital for Children. He performs and interprets thousands of radiological examinations for children each year. Children are not just small adults. Scanning children requires time, patience and exceptional attention to detail. An anxious time for any parent, Dr Gaunt will ensure you are well informed about the process and results of your child’s scan, in a friendly and approachable way.",
+		languages: ["English"],
+		specialInterests: [],
+		phone: "0203 904 4441",
+		email: "contact@harleystreetultrasound.com",
+		gmcNumber: "None",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Niels van Vucht",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/4pQWolMfNhQGdwYTcyT7fE/e1d5b4d67a7a18d126621f7162ad2450/our-specialists-niels-van-vucht.png",
+		accreditations: ["BSc, MSc, MBBS, FRCR"],
+		slug: "niels-van-vucht",
+		heading:
+			"Dr. Niels van Vucht is a Consultant Radiologist at University College of London Hospital (UCLH) with a subspecialty in Musculoskeletal Imaging.",
+		description:
+			"Dr. Niels van Vucht is a Consultant Radiologist at University College of London Hospital (UCLH) with a subspecialty in Musculoskeletal Imaging. He completed a Fellowship in Musculoskeletal radiology at the Royal National Orthopaedic Hospital in Stanmore, focused on bone- and soft tissue sarcoma and image guided interventions.\nDr. Niels van Vucht lectures at a range of medical conferences and has a passion for teaching. He is an author of several scientific publications and collaborates on research in musculoskeletal and sports imaging.",
+		languages: ["English", "Dutch"],
+		specialInterests: ["Musculoskeletal radiology"],
+		phone: "07786632430",
+		email: "niels@mskmedicalimaging.com",
+		gmcNumber: "7579988",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Dr Tahir Hussain",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/78QcTRU3zUO66TkMfq6g8z/0f56cc5b2b55950b4845d3a3ce7f7b71/our-specialists-tahir-hussain.png",
+		accreditations: ["MBBS BSc FRCR"],
+		slug: "tahir-hussain",
+		heading:
+			"Dr. Tahir Hussain, MBBS BSc FRCR, qualified from University College London Medical School in 2011, and subsequently completed his General and Specialist Nuclear Medicine",
+		description:
+			"Dr. Tahir Hussain, MBBS BSc FRCR, qualified from University College London Medical School in 2011, and subsequently completed his General and Specialist Nuclear Medicine & PET CT Radiology training through the East Midlands Radiology training scheme in 2019. Dr. Hussain has specialist expertise in Nuclear Medicine and PET CT, oncological imaging, and general radiology imaging. He is based at the Barts Health NHS Trust, working at the Royal London and St. Bartholomew's Hospitals. He routinely performs all general ultrasound examinations, including full abdomen, male pelvis, and testicular examinations. Currently, Dr. Hussain serves as the Clinical Lead for the Nuclear Medicine department at Barts Health NHS Trust and is actively involved in medical education.",
+		languages: ["English"],
+		specialInterests: ["Nuclear Medicine & PET CT", "Oncology", " General Radiology"],
+		phone: "07944975648",
+		email: "tahir@harleystreetultrasound.com",
+		gmcNumber: "7169719",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Dr Husam Wassati",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/aHXeHgebbrMRgL8QCk9ef/3c4d4b7a3aee6f342d1aeb0808c1692c/our-specialists-husam-wassati.png",
+		accreditations: ["MBChB, FRCR"],
+		slug: "husam-wassati",
+		heading:
+			"Dr Husam Wassati is a Consultant Head & Neck and Neuroradiologist at King’s College Hospital NHS Foundation Trust.",
+		description:
+			"Dr Husam Wassati is a Consultant Head & Neck and Neuroradiologist at King’s College Hospital NHS Foundation Trust. Dr Wassati completed his general and subspecialist head & neck and neuroradiology training at the University Hospitals of Leicester and Queen Medical Centre at Nottingham following a period of training in neurosurgery at specialist hospitals in London.  He performs all multimodality imaging and image-guided interventions of the whole head and neck region including the thyroid, parathyroid, major salivary glands, lymph nodes and benign/malignant conditions. Dr Wassati introduced, with a colleague (Dr Timothy Yusuf), the UK first microwave ablation for benign thyroid nodules at the Princess Royal University Hospital NHS trust (part of King's College Hospital NHS Foundation Trust). Dr Wassati also performs general ultrasound examinations of the liver, gallbladder, kidneys, testes and deep veins of the arms and legs and performs them on a regular basis in his clinical practice. Dr Husam Wassati is a member of the: Dr Wassati has a great interest in education, having arranged several teaching sessions and national courses to radiology trainees, medical students, and radiographers.",
+		languages: ["English", "Arabic"],
+		specialInterests: ["Head and Neck", "Neuroradiologist"],
+		phone: "07508547429",
+		email: "H.wassati@nhs.net",
+		gmcNumber: "7251947",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Miss Chloe Constantinou",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/2U948ecmcpHNkbUSvckuTn/8b4466fbf9f73bc1299602105c6afd3d/our-specialists-chloe-constantinou.png",
+		accreditations: ["MD, PhD"],
+		slug: "chloe-constantinou",
+		heading:
+			"Miss Chloe Constantinou is a Specialist Oncoplastic Breast Surgeon. She is currently Consultant Breast Surgeon at Kingston Hospital NHS Foundation Trust, and an Honorary Consultant Breast Surgeon at The Royal Marsden Hospital.",
+		description:
+			"Miss Chloe Constantinou is a Specialist Oncoplastic Breast Surgeon. She is currently Consultant Breast Surgeon at Kingston Hospital NHS Foundation Trust, and an Honorary Consultant Breast Surgeon at The Royal Marsden Hospital.\nShe obtained higher general surgical training in Red Cross Hospital in one of the busiest and largest hospitals in Athens. She received further training in breast surgery and advanced oncoplastic breast surgery techniques at some of London's world’s famous Breast Units including Imperial College London and Royal Free Hospital. Prior to taking up a Consultant Oncoplastic Breast Surgeon post at Kingston NHS Foundation Hospital she undertook a prestigious Oncoplastic Fellowship in Breast Surgery at Royal Marsden Hospital, London. Academically in 2018, she was awarded a PhD thesis for her research on Triple Negative Breast Cancer, at University of Ioannina, School of Medicine, Greece; a retroprospective project that investigated the correlation of immnunohistochemical markers with the prognosis of triple negative breast cancer. The results were published in peer review journals. She has an active interest in surgical research and has published widely in peer reviewed journals. Her special interests include surgery for breast cancer, immediate breast reconstruction, risk reducing surgery, oncoplastic techniques, therapeutic breast reduction, breast conservation surgery for large breast tumours, and breast volume replacement techniques for cancer.   She runs rapid diagnostic clinics and patients that undergoing a biopsy are discussed in the Multi-Disciplinary Team, of breast surgeons, radiologists, oncologists, histopathologists and specialist nurses who meet on a weekly basis to discuss patient cases with the aim to provide best quality of care  Key Publications  Expression and Clinical Significance of claudin-7, PDL-1, PTEN, c-Kit, c-Met, cMyc, ALK, CK5/6, CK17, p53, EGFR, Ki67, p63 in Triple Negative Breast Cancer.A Single Centre Prospective Observational Study. C Constantinou, S Papadopoulos, E Karyda, A Alexopoulos, N Agnanti, A Batistatou and H Harisis, in vivo32: 303-311 (2018) doi:10.21873/invivo.11238 Inflammation and breast cancer. C Constantinou, IS Fentiman. Breast Cancer Management, 2013 Vol. 2, No. 4, Pages 311-325, DOI 10.2217/bmt.13.26 (doi:10.2217/bmt.13.26) Ductal Carcinoma in Situ Treatment Requires a Multidisciplinary Approach. C Constantinou, IS Fentiman. Journal of Cancer Therapy 2013. Vol. 4 No. 7, Article ID: 36240 , 14 pages DOI:10.4236/jct.2013.47140 The value of plasma neurotensin and cytokine measurement for the detection of bowel ischaemia in clinically doubtful cases: a prospective study. Sgourakis G, Papapanagiotou A, Kontovounisios C, Karamouzis MV, Lanitis S, Konstantinou C, Karaliotas C, Papavassiliou AG.Exp Biol Med (Maywood).  Diagnosis and treatment of Male Breast Cancer. Chloe Constantinou and Ian Fentiman. Breast cancer Management, 2013 Vol. 1, No. 4, Pages 295-304 , DOI. 10.2217/bmt.12.47 (doi:10.2217/bmt.12.47",
+		languages: ["English", "Greek"],
+		specialInterests: [
+			"Surgery for breast cancer",
+			"Immediate breast reconstruction",
+			"Risk reducing surgery",
+			"Oncoplastic techniques",
+			"Therapeutic breast reduction",
+			"Breast conservation surgery for large breast tumours",
+			"Breast volume replacement techniques for cancer",
+		],
+		phone: "+447835481203",
+		email: "miss.chloeconstantinou@nhs.net",
+		gmcNumber: "7112163",
+		specialties: [
+			{
+				title: "Breast Surgeon",
+				slug: "breast-surgeon",
+			},
+		],
+	},
+	{
+		name: "Dr Nikhil Patel",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/3o5GyStCt8rPw3QEAGb1rq/42dd83ec1ae8a9523630c3f7b47d1638/our-specialists-nikhil-patel.png",
+		accreditations: ["MBBS, FRCR, BSc(Hons)"],
+		slug: "nikhil-patel",
+		heading:
+			"Dr Nikhil R Patel is a Consultant Radiologist at King’s College Hospital NHS Foundation Trust and specialises in musculoskeletal imaging.",
+		description:
+			"Dr Nikhil R Patel is a Consultant Radiologist at King’s College Hospital NHS Foundation Trust and specialises in musculoskeletal imaging.\nHe completed both general radiology and subspecialty musculoskeletal radiology training within the Kent, Surrey, and London deaneries. He spent his final year of specialty training at St George’s Hospital, London to further enhance his musculoskeletal radiology skills. He is experienced in a vast array of musculoskeletal imaging including MRI, CT, and ultrasound guided procedures. He also performs general ultrasound as part of his clinical practice including abdomen, kidneys, testes and DVT scans. Dr Patel qualified from Barts and The London, School of Medicine in 2012, where he also achieved a BSc (Hons) in Sports and Exercise Medicine. He is passionate about teaching, having taught both locally and nationally, including anatomy at university level, and helps organise regional radiology courses. He also regularly attends radiology conferences and courses to keep up to date with the latest clinical practice. Dr Patel is a member of:",
+		languages: ["English", "Gujarati"],
+		specialInterests: ["Musculoskeletal radiology"],
+		phone: "07932 974 038",
+		email: "nikhilpatel@doctors.org.uk",
+		gmcNumber: "7271989",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Ms Heba Alkutbi",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/79bZtyaGftHN359ny7MBy9/75d88e27b49b7081b86f0c46a4ac9833/our-specialists-ms-heba-alkutbi.png",
+		accreditations: ["BSc, PGc "],
+		slug: "ms-heba-alkutbi",
+		heading:
+			"Heba Alkutbi ( BSc PGc ) a senior sonographer with over 17 years scanning experience. Heba completed her BSc in Diagnostic Radiography at St Georges Medical School in 2004.",
+		description:
+			"Heba Alkutbi ( BSc PGc ) a senior sonographer with over 17 years scanning experience . Heba completed her BSc in Diagnostic Radiography at St Georges Medical School in 2004. She went on to specialise in Medical Ultrasound and completed her PGc training at City University in 2007. Heba has extensive experience in both obstetrics and gynaecology ultrasound. She has also trained many midwives, radiographers and doctors and was the lead clinical supervisor and deputy Ultrasound Services Manager at Imperial College Healthcare NHS Trust in London. Heba is accredited by the Fetal Medicine Foundation to undertake fetal Nuchal Translucency scans to screen for chromosomal abnormalities such as Down, Edward and Patau’s Syndromes. She also undertakes all types of obstetric scanning including early pregnancy, dating, anomaly, Fetal Doppler studies, fetal well being scans and 3D/4D scans.\nAs well as Obstetrics, Heba has a keen interest in gyanecology ultrasound and has worked closely with many world-renowned Gynaecologist. She has extensive experience in using ultrasound to screen for gynaecology cancers. Heba is registered with the Health Care Professional Council and a member of the British Medical Ultrasound Society (BMUS) and the International Society of Ultrasound in Obstetrics and Gynaecology (ISUOG).",
+		languages: ["English", "Arabic"],
+		specialInterests: ["Obstetrics", "Gynaecology"],
+		phone: "0203 904 4441",
+		email: "heba.alkutbi@me.com",
+		gmcNumber: "None",
+		specialties: [
+			{
+				title: "Sonographer",
+				slug: "sonographer",
+			},
+		],
+	},
+	{
+		name: "Dr Ahmed Shah",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/2IMyNnvoyQRaYPsUSx72f0/574b89fe4fd3dc7c4512466d683ab946/our-specialists-ahmed-shah.png",
+		accreditations: ["FRCR, MBBS, BSc"],
+		heading:
+			"Dr Shayan Ahmed is a Consultant Radiologist at Barts Health NHS Trust with a special interest in musculoskeletal and urological imaging. He routinely performs a vast array of general and musculoskeletal diagnostic ultrasound.",
+		slug: "ahmed-shah",
+		description:
+			"Dr Ahmed Shah is a Consultant Breast and General Radiologist, offering a wide range of ultrasound scans and procedures at 99 Harley Street. Dr Shah completed a Bachelors Degree in Molecular Pharmacology at Kings College London in 2005, before entering medical training at Barts and The London Medical School. He completed junior doctor rotations throughout North and East London before entering clinical radiology training in Leicester, a highly coveted radiology training program. He became a Fellow of the Royal College of Radiologists in 2019 and was appointed Consultant Radiologist at Frimley Health NHS Trust in 2020. He is a specialist in breast and oncology imaging, and is also a screening specialist in the NHS Breast Screening Programme, based at the prestigious Parapet Breast Clinic, Windsor. This means Dr Shah reads a very high volume of mammograms annually, and is involved in complex and challenging patient cases.  In addition to expert imaging for benign and malignant breast disease (including biopsies and cyst aspirations), Dr Shah offers general ultrasound of the abdomen, scrotum, lumps and bumps, deep veins and other general scans. Our patients often comment on Dr Shah’s excellent communication skills, ability to translate complex knowledge and findings into easily understandable and digestible information, excellent bedside manner and holistic approach to caring for his patients. His reviews speak for themselves.  Aside from the practice of radiology, Dr Shah has a keen interest in artificial intelligence and its ability to benefit patient care. He is part of a national research consortium evaluating artificial intelligence in breast ultrasound, with a view to reducing unnecessary biopsies, currently applying for national implementation funding from NIHR. Dr Shah is Senior Clinical Lecturer in Radiology at Brunel Medical School, and is the undergraduate lead for Radiology and MSK medicine at Wexham Park Hospital. He is also actively involved in the training of Radiology registrars at his NHS trust. He is the lead for radiology discrepancies and learning (REALM) at his NHS site, an important radiology department governance role. Dr Shah has a wonderful wife and two young children, who keep him on his toes outside of work. He enjoys gardening, DIY, football and travelling.",
+		languages: ["English"],
+		specialInterests: ["Consultant Breast", " General Radiology"],
+		phone: "0203 904 4441",
+		email: "contact@harleystreetultrasound.com",
+		gmcNumber: "7138411",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Hela Sbano",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/5g95AqpXif8bhcHhtvbhkn/d7d8b3a5afb08d41d9a8a19d4fc3e7a1/our-specialists-hela-sbano.png",
+		accreditations: ["MBBS, BSc, MRCP, FRCR"],
+		slug: "hela-sbano",
+		heading:
+			"Dr. Hela Sbano is a Consultant Radiologist at the University College London Hospital (UCLH) with specialist expertise in Breast and General radiology.",
+		description:
+			"Dr. Hela Sbano is a Consultant Radiologist at the University College London Hospital (UCLH) with specialist expertise in Breast and General radiology.\nDr. Hela Sbano trained in Medicine at Charing Cross and Westminster Medical School (part of Imperial College\nSchool of Medicine) where she obtained the MBBS and BSc.\nShe underwent postgraduate training and was awarded the Membership of the Royal College of Physicians in 2000.\nShe undertook Specialist Radiology training at Imperial College\nNHS Trust and was awarded the Fellowship of the Royal College of Radiologists in 2007.\nDr. Hela Sbano was appointed as a Consultant Breast and General Radiologist at the University College London Hospital in 2010.\nShe undertakes all aspects of breast imaging including Mammography, Ultrasound, MRI, and CT diagnostics.\nShe performs all ultrasound and stereotactic breast-related procedures including vacuum excision and breast lesion localisation prior to surgery.\nDr. Hela Sbano also undertakes general, acute, and on-call radiology. She held the role of UCLH lead consultant for Breast Imaging for 8 years.\nDr. Hela Sbano has been a Reviewer for the British Journal of Radiology since 2010.\nShe is a designated appraiser for doctors at UCLH. Enthusiastic about education, Dr Sbano is a clinical tutor at UCLH.\nShe was also a College tutor for the UCH radiology training scheme (2014 - 2016) as well as Audit lead for the UCLH department of Imaging (2013 - 2014)",
+		languages: ["English"],
+		specialInterests: ["Breast Imaging", " General Radiology"],
+		phone: "0203 904 4441",
+		email: "contact@harleystreetultrasound.com",
+		gmcNumber: "4308654",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
+	},
+	{
+		name: "Mr Massimiliano Cariati",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/7nrHn27Oq2XukyYcIlilBX/64ebaa6fa87a733749deb38729e29f22/our-specialists-massimiliano-cariati.png",
+		accreditations: ["MBBS, PhD, FRCS"],
+		slug: "mr-massimiliano-cariati",
+		heading:
+			"Mr. Massimiliano Massi Cariati is a consultant oncoplastic breast surgeon. His field of expertise is the assessment and management of benign and malignant diseases of the breast.",
+		description:
+			"Mr. Massimiliano Massi Cariati is a consultant oncoplastic breast surgeon. His field of expertise is the assessment and management of benign and malignant diseases of the breast. He has a specialised interest in breast cancer management, breast conservation strategies, oncoplastic breast surgery and breast reconstruction, in particular pre- and sub-pectoral immediate implant-based reconstruction with acellular dermal matrix.\nMr. Massimiliano Massi Cariati graduated from the University of Florence Medical School summa cum laude at the top of his class. After completing his basic medical training in Italy, he moved to the UK to read for a PhD degree in surgical oncology at the University of Cambridge, with a thesis on breast cancer stem cells. Having obtained his PhD degree he went on to complete his Core Surgical Training with the London School of Surgery, and then his higher surgical training within the London and South-East Thames region which led to the award of his CCT in general surgery with a sub-specialty interest in breast surgery. During this time he spent three years in the Oncoplastic Breast Unit at Guy's and St Thomas' in London, training in oncoplastic and reconstructive breast surgery. He is a fellow of the Royal College of surgeons of England.\nDuring his surgical training, he was awarded the prestigious NIHR Clinical Academic Lectureship in Breast Surgery as well as the Academy of Medical Sciences Starter Grant, which allowed him to develop his research interests within the Department of Research Oncology at King's College London, with a focus on the development of novel intra-operative technologies for the assessment of resection margins in breast conserving surgery, and a parallel interest in the pathophysiology of lymphoedema. His research was recognised with the award of the 2016 Ronald Raven Proferred Prize by the British Association of Surgical Oncology and he has lectured and presented his work nationally and internationally.",
+		languages: ["English", "Italian", "Spanish"],
+		specialInterests: [
+			"Breast Reconstruction",
+			"Oncoplastic Surgery",
+			"Breast disease",
+			"Breast Cancer",
+		],
+		phone: "07939430662",
+		email: "admin@cariatibreastsurgeon.co.uk",
+		gmcNumber: "6060684",
+		specialties: [
+			{
+				title: "Breast Surgeon",
+				slug: "breast-surgeon",
+			},
+		],
+	},
+	{
+		name: "Sanjay Karamsadkar",
+		imageUrl:
+			"https://images.ctfassets.net/1w1x9dft88u5/2AIymFmc0N13a0fFNYAh8S/e8f79d977274d4377bae06e4c2485983/our-specialists-sanjay-karamsadkar.png",
+		accreditations: [" MBBS, BSc (Hons), FRCR"],
+		slug: "sanjay-karamsadkar",
+		heading:
+			"Dr. Sanjay Karamsadkar is a Consultant Radiologist at the Royal Free London NHS Foundation Trust. His specialist expertise includes gastrointestinal, hepatobiliary and general imaging.",
+		description:
+			"Dr. Sanjay Karamsadkar is a Consultant Radiologist at the Royal Free London NHS Foundation Trust. His specialist expertise includes gastrointestinal, hepatobiliary and general imaging. \nDr. Sanjay Karamsadkar qualified from University College London Medical School in 2014. He undertook specialist training at St Bartholomew's and Royal London hospitals where he attained his Fellowship at the Royal College of Radiologists. He undertakes all aspects of gastrointestinal and hepatobiliary imaging which include MRI, CT, ultrasound, fluoroscopy and plain radiographs. Dr Karamsadkar has a keen interest in teaching and is involved in the training of specialist registrars at the Royal Free London NHS Foundation Trust.",
+		languages: ["English"],
+		specialInterests: ["Gastrointestinal", "Hepatobiliary radiology"],
+		phone: "07939430662",
+		email: "admin@cariatibreastsurgeon.co.uk",
+		gmcNumber: "7461128",
+		specialties: [
+			{
+				title: "Radiologist",
+				slug: "radiologist",
+			},
+		],
 	},
 ];

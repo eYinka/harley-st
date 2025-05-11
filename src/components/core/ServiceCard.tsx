@@ -36,7 +36,7 @@ export default function ServiceCard(props: ServiceCardProps) {
 		case "green":
 			gradientClasses = "gradient_bg_green";
 			textClasses = "text-primary-600 before:text-green-300";
-			borderClasses = "border-green-300";
+			borderClasses = "border-green-100";
 			break;
 
 		case "orange":

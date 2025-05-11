@@ -49,7 +49,7 @@ export default function PageHero(props: PageHeroProps) {
 
 		case "green":
 			gradientClasses = "gradient_bg_green";
-			subheadingClasses = "text-primary-600";
+			subheadingClasses = "text-primary-500";
 			textClasses = "text-primary-600";
 			break;
 
@@ -57,6 +57,12 @@ export default function PageHero(props: PageHeroProps) {
 			gradientClasses = "gradient_bg_orange";
 			subheadingClasses = "text-brown-200";
 			textClasses = "text-brown-200";
+			break;
+
+		case "blue":
+			gradientClasses = "gradient_bg";
+			subheadingClasses = "text-primary-dark ";
+			textClasses = "text-primary-dark";
 			break;
 
 		default:
@@ -93,12 +99,7 @@ export default function PageHero(props: PageHeroProps) {
 								<br />
 							</span>{" "}
 							{subheading && (
-								<span
-									className={clsx(
-										"text-3xl lg:text-5xl",
-										subheadingClasses,
-									)}
-								>
+								<span className={clsx("text-3xl lg:text-5xl", subheadingClasses)}>
 									{subheading}
 								</span>
 							)}

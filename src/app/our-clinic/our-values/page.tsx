@@ -59,6 +59,38 @@ export default function Page() {
               <p>From your first appointment to any follow-ups, you can expect honesty, confidentiality, and reliability from everyone on the team.</p>
             `,
 				},
+				{
+					id: 2,
+					title: "Integrity",
+					description: `
+              <p>Our team operates to the highest possible ethical standards. Your welfare is our highest priority - we will always talk through the treatment options available and ensure you fully understand any risks.</p>
+              <p>We provide reassurance where we can, but we will also be honest and manage your expectations where necessary.</p>
+            `,
+				},
+				{
+					id: 3,
+					title: "Expertise",
+					description: `
+              <p>As highly trained healthcare professionals, we use the latest diagnostic technology to provide you with the most accurate possible diagnosis.</p>
+              <p>Our specialists have the expertise to accurately interpret your scans and offer comprehensive advice and treatment suggestions.</p>
+            `,
+				},
+				{
+					id: 4,
+					title: "Equality",
+					description: `
+              <p>For us, every patient is equally important. As members of the medical profession, we treat all our patients&nbsp;with the highest levels of respect and dignity.</p>
+              <p>Equality will always underpin our practice and the services that we offer everyone.</p>
+            `,
+				},
+				{
+					id: 5,
+					title: "Clear Communication",
+					description: `
+              <p>We're here to help you. So, it's important to us that you understand the treatment we propose and what the results of any diagnostic imaging scans mean.</p>
+              <p>Don't worry about asking us too many questions. We want you to feel confident in the care you’re receiving. And, we strive to make everything as simple to understand as possible.</p>
+            `,
+				},
 			],
 		},
 		valuesGrid: [

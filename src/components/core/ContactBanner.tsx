@@ -10,10 +10,11 @@ import Image from "next/image";
 interface ContactBannerProps {
 	theme?: Theme;
 	bgImage: string;
+	bottomCurve?: boolean;
 }
 
 export default function ContactBanner(props: ContactBannerProps) {
-	const { theme, bgImage } = props;
+	const { theme, bgImage, bottomCurve } = props;
 
 	return (
 		<section className="relative">
@@ -39,7 +40,7 @@ export default function ContactBanner(props: ContactBannerProps) {
 					</div>
 				</div>
 			</div>
-			<BottomCurve />
+			{bottomCurve && <BottomCurve /> }
 		</section>
 	);
 }

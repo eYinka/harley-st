@@ -41,7 +41,7 @@ export default function Home() {
 			<Spacer mobileHeight="80px" desktopHeight="100px" />
 			<Faqs />
 			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<ContactBanner bgImage="/images/463bfd86-harley-street-ultrasound-team-are-here-to-help-bg.png" />
+			<ContactBanner bgImage="/images/463bfd86-harley-street-ultrasound-team-are-here-to-help-bg.png" bottomCurve/>
 			<Spacer mobileHeight="80px" desktopHeight="100px" />
 			<Articles />
 			<Spacer mobileHeight="80px" desktopHeight="100px" />

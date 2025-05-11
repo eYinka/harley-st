@@ -23,6 +23,10 @@
 	--color-pink-300: #ff4794;
 	--color-red-100: #fc4a96;
 	--color-red-200: #4b0c27;
+	--color-green-100: #00c5c5;
+	--color-green-200: #11bb95;
+	--color-green-300: #52a774;
+	--color-green-400: #398472;
 	--color-orange-100: #ff843f;
 	--color-orange-200: #fcb000;
 	--color-orange-300: #e1934a;
@@ -36,6 +40,8 @@
 	--color-gradient-500: #edb72d;
 	--color-gradient-600: #ff843f;
 	--color-gradient-700: #009e9e;
+	--animate-accordion-down: accordion-down 0.2s ease-out;
+	--animate-accordion-up: accordion-up 0.2s ease-out;
 }
 
 @layer utilities {
@@ -90,5 +96,23 @@
 	.service_card ul li:before {
 		content: "✔ ";
 		font-size: 16px;
+	}
+
+	@keyframes accordion-down {
+		from {
+			height: 0;
+		}
+		to {
+			height: var(--radix-accordion-content-height);
+		}
+	}
+
+	@keyframes accordion-up {
+		from {
+			height: var(--radix-accordion-content-height);
+		}
+		to {
+			height: 0;
+		}
 	}
 }
