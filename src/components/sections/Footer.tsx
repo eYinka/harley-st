@@ -3,7 +3,7 @@ import Image from "next/image";
 import QuoteIcon from "@/components/icons/QuoteIcon";
 import NewsletterForm from "@/components/core/NewsletterForm";
 import FooterLinks from "../core/FooterLinks";
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "../core/SocialIcons";
 
 export default function Footer() {
 	const links = [

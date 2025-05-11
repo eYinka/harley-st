@@ -85,6 +85,9 @@
 	b {
 		font-weight: 600;
 	}
+	div.swiper {
+		display: grid !important;
+	}
 	.swiper-wrapper {
 		width: 100%;
 		max-width: 100%;

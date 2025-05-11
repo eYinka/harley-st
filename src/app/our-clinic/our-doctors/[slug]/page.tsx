@@ -19,8 +19,6 @@ export default async function Page(props: PageProps) {
 		return notFound();
 	}
 
-	// TODO: Ensure to implement page title and meta tags
-
 	return (
 		<>
 			<Header />

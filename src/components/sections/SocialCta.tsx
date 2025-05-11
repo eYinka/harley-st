@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TopCurve from "@/components/core/TopCurve";
 import GradientTitle from "@/components/core/GradientTitle";
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "../core/SocialIcons";
 
 interface SocialCtaProps {
 	bgImage: string;

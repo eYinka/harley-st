@@ -13,7 +13,7 @@ interface ServiceTabProps {
 	handleClick: () => void;
 }
 
-export default function ServiceTab(props: ServiceTabProps) {
+export default function CategoryButton(props: ServiceTabProps) {
 	const { title, icon: Icon, isActive, handleClick } = props;
 	const activeClass = isActive
 		? "border border-gray-100 inset-shadow-sm shadow-sm"

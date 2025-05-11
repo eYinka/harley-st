@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import ServiceTab from "./ServiceTab";
+import CategoryButton from "../core/CategoryButton";
 import type { Service } from "@/lib/data-source";
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "../core/ServiceCard";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import clsx from "clsx";
@@ -22,16 +22,17 @@ export default function ServiceTabs(props: ServiceTabsProps) {
 	return (
 		<section className="container mx-auto">
 			<div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-12">
-				<div className="sm:hidden block">
+				<div className="md:hidden block">
 					<Image
 						src={"/images/swipe-animation.gif"}
 						width={150}
 						height={90}
+						unoptimized
 						alt=""
 						className="mb-4"
 					/>
 					{services?.length > 0 && (
-						<p className="sm:hidden text-xl text-gray-500 text-center mb-6">
+						<p className="md:hidden text-xl text-gray-500 text-center mb-6">
 							Swipe to View Categories
 						</p>
 					)}
@@ -41,7 +42,7 @@ export default function ServiceTabs(props: ServiceTabsProps) {
 								key={service.slug}
 								className="w-full max-w-[350px] py-12 px-6"
 							>
-								<ServiceTab
+								<CategoryButton
 									title={service.label}
 									icon={service.icon}
 									isActive={currentTab === service.slug}
@@ -54,7 +55,7 @@ export default function ServiceTabs(props: ServiceTabsProps) {
 
 				{services.map((service: Service) => (
 					<div key={service.slug} className="basis-1/4 hidden lg:block">
-						<ServiceTab
+						<CategoryButton
 							title={service.label}
 							icon={service.icon}
 							isActive={currentTab === service.slug}

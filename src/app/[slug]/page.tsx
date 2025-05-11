@@ -1,6 +1,6 @@
 import BookingWidget from "@/components/booking/BookingWidget";
 import SectionIntro from "@/components/core/SectionIntro";
-import ServiceTabs from "@/components/core/ServiceTabs";
+import ServiceTabs from "@/components/sections/ServiceTabs";
 import Spacer from "@/components/core/Spacer";
 import PageHero from "@/components/sections/PageHero";
 import Faqs from "@/components/sections/Faqs";

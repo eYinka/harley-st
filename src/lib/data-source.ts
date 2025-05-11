@@ -43,6 +43,13 @@ export type Doctor = {
 	}[];
 };
 
+export type Price = {
+	service: string;
+	slug: string;
+	price: string;
+	subtitle?: string;
+};
+
 export const femaleServices: Service[] = [
 	{
 		slug: "general",
@@ -1140,5 +1147,256 @@ export const doctors: Doctor[] = [
 				slug: "radiologist",
 			},
 		],
+	},
+];
+
+export const childrenPriceList: Price[] = [
+	{
+		service: "Baby Hips | 0 - 4 weeks",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Baby Spine | 0 - 4 Weeks",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Boy Testes",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Abdomen & Pelvic",
+		slug: "#",
+		price: "£450.00",
+	},
+	{
+		service: "Child Ankle",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Armpit / Axilla",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Breast",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Chest / Thorax",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Elbow",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Foot",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Hand & Wrist",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Hip",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Kidneys & Urinary Tract",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Knee",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Neck / Thyroid",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Pelvic",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Shoulder",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Soft Tissue Lumps",
+		slug: "#",
+		price: "£350.00",
+	},
+	{
+		service: "Child Vascular Malformation",
+		slug: "#",
+		price: "£350.00",
+	},
+];
+
+export const femalePriceList: Price[] = [
+	{ service: "Abdomen", slug: "#", price: "£290.00" },
+	{ service: "Abdomen & Pelvic", slug: "#", price: "£440.00" },
+	{ service: "Abdominal Aortic Aneurysm AAA Screening", slug: "#", price: "£260.00" },
+	{ service: "Armpit / Axilla", slug: "#", price: "£260.00" },
+	{ service: "Breast Ultrasound with Armpit / Axilla", slug: "#", price: "£350.00" },
+	{
+		service: "Deep Vein Thrombosis - Single Arm | DVT Ultrasound",
+		slug: "#",
+		price: "£290.00",
+		subtitle: "+£160 for Both Arms",
+	},
+	{
+		service: "Deep Vein Thrombosis - Single Leg | DVT Ultrasound",
+		slug: "#",
+		price: "£290.00",
+		subtitle: "+£160 for Both Legs",
+	},
+	{ service: "Female Health Check", slug: "#", price: "£600.00" },
+	{ service: "Hernia", slug: "#", price: "£260.00" },
+	{ service: "Kidneys & Urinary Tract", slug: "#", price: "£260.00" },
+	{ service: "Liver & Gallbladder", slug: "#", price: "£260.00" },
+	{ service: "Lumps, Bumps and Soft Tissue", slug: "#", price: "£260.00" },
+	{ service: "Neck", slug: "#", price: "£280.00" },
+	{ service: "Ovarian Screening", slug: "#", price: "£260.00" },
+	{ service: "Pelvic", slug: "#", price: "£260.00" },
+	{ service: "Thyroid", slug: "#", price: "£280.00" },
+];
+
+export const breastClinicPriceList: Price[] = [
+	{ service: "Breast Consultation", slug: "#", price: "£350.00" },
+	{ service: "Breast Implant Check", slug: "#", price: "£350.00" },
+	{ service: "Breast Lumps & Bumps", slug: "#", price: "£350.00" },
+	{ service: "Breast Ultrasound with Armpit / Axilla", slug: "#", price: "£350.00" },
+	{ service: "Complete Breast Assessment (Surgeon & Ultrasound)", slug: "#", price: "£550.00" },
+	{ service: "Female Health Check", slug: "#", price: "£600.00" },
+	{ service: "Male Breast", slug: "#", price: "£280.00" },
+];
+
+export const pregnancyPriceList: Price[] = [
+	{
+		service: "Anatomy / Anomaly Ultrasound | From 18 - 24 weeks",
+		slug: "#",
+		price: "£260.00",
+		subtitle: "Uterine Artery Doppler study - Twin Pregnancy Scan",
+	},
+	{
+		service: "Dating Scan | From 10 - 15 Weeks",
+		slug: "#",
+		price: "£160.00",
+		subtitle: "Twin Pregnancy Scan + £100.00",
+	},
+	{ service: "Early Pregnancy Scan | From 6 - 10 weeks", slug: "#", price: "£160.00" },
+	{
+		service: "Gender & Foetal Wellbeing | From 16 - 18 Weeks",
+		slug: "#",
+		price: "£190.00",
+		subtitle: "Twin Pregnancy Scan + £90.00",
+	},
+	{
+		service: "Growth Scan | From 24 - 40 Weeks",
+		slug: "#",
+		price: "£240.00",
+		subtitle: "Twin Pregnancy Scan + £90.00",
+	},
+	{ service: "Non Invasive Prenatal Test - NIPT | From 10 Weeks", slug: "#", price: "£525.00" },
+	{
+		service: "Ovulation Scan | Follicle Tracking & Endometrial Thickness",
+		slug: "#",
+		price: "£260.00",
+	},
+	{ service: "Pelvic", slug: "#", price: "£260.00" },
+	{
+		service: "Presentation Scan | From 35 - 40 weeks",
+		slug: "#",
+		price: "£160.00",
+		subtitle: "Twin Pregnancy Scan + £90.00",
+	},
+];
+
+export const malePriceList: Price[] = [
+	{ service: "Abdomen", slug: "#", price: "£290.00" },
+	{ service: "Abdominal Aortic Aneurysm | AAA Screening", slug: "#", price: "£260.00" },
+	{ service: "Armpit / Axilla", slug: "#", price: "£260.00" },
+	{
+		service: "Deep Vein Thrombosis - Single Arm | DVT Ultrasound",
+		slug: "#",
+		price: "£290.00",
+		subtitle: "+£160 for Both Arms",
+	},
+	{
+		service: "Deep Vein Thrombosis - Single Leg | DVT Ultrasound",
+		slug: "#",
+		price: "£290.00",
+		subtitle: "+£160 for Both Legs",
+	},
+	{ service: "Hernia", slug: "#", price: "£260.00" },
+	{ service: "Kidneys & Urinary Tract", slug: "#", price: "£260.00" },
+	{ service: "Liver & Gallbladder", slug: "#", price: "£260.00" },
+	{ service: "Lumps, Bumps and Soft Tissue", slug: "#", price: "£260.00" },
+	{ service: "Male Breast", slug: "#", price: "£280.00" },
+	{ service: "Male Health Check", slug: "#", price: "£460.00" },
+	{ service: "Neck", slug: "#", price: "£280.00" },
+	{ service: "Testes / Scrotum", slug: "#", price: "£250.00" },
+	{ service: "Thyroid", slug: "#", price: "£280.00" },
+];
+
+export const muscleJointPriceList: Price[] = [
+	{
+		service: "Ankle",
+		slug: "#",
+		price: "£280.00",
+		subtitle: "An additional £180 to scan both Ankles",
+	},
+	{
+		service: "Calf",
+		slug: "#",
+		price: "£280.00",
+		subtitle: "An Additional £180 to scan both Calves",
+	},
+	{
+		service: "Elbow & Forearm",
+		slug: "#",
+		price: "£280.00",
+		subtitle: "An additional £180 to scan both Elbows & Forearms",
+	},
+	{
+		service: "Foot",
+		slug: "#",
+		price: "£280.00",
+		subtitle: "An Additional £180 to scan both Feet",
+	},
+	{
+		service: "Hand & Wrist",
+		slug: "#",
+		price: "£280.00",
+		subtitle: "An additional £180 to scan both Hands & Wrists",
+	},
+	{ service: "Hip", slug: "#", price: "£280.00" },
+	{
+		service: "Knee",
+		slug: "#",
+		price: "£280.00",
+		subtitle: "An Additional £180 to scan both Knees",
+	},
+	{
+		service: "Shoulder",
+		slug: "#",
+		price: "£280.00",
+		subtitle: "An Additional £180 to scan both Shoulders",
 	},
 ];
