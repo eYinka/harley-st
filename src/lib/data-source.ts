@@ -50,6 +50,23 @@ export type Price = {
 	subtitle?: string;
 };
 
+export type TransportRoute = {
+	id: number;
+	title: string;
+	description: string;
+	icon: string;
+	routes?: {
+		id: number;
+		text: string;
+		icon: string;
+	}[];
+	sections?: {
+		id: number;
+		title: string;
+		description: string;
+	}[];
+};
+
 export const femaleServices: Service[] = [
 	{
 		slug: "general",
@@ -1398,5 +1415,51 @@ export const muscleJointPriceList: Price[] = [
 		slug: "#",
 		price: "£280.00",
 		subtitle: "An Additional £180 to scan both Shoulders",
+	},
+];
+
+export const transportRoutes: TransportRoute[] = [
+	{
+		id: 1,
+		title: "Public Transport",
+		description:
+			"The following public transport lines have routes that pass near our Harley Street Clinic",
+		icon: "https://images.ctfassets.net/1w1x9dft88u5/5ZZOf09Xw3onmx4CFy0aO6/048992811711f240f596fadf139ac688/04db66c4-tfl-logo.png",
+		routes: [
+			{
+				id: 1,
+				text: "Bus: 113, 13, 18, 30, 453, 74, 758, 88, 94",
+				icon: "https://images.ctfassets.net/1w1x9dft88u5/5a1Z3kYA2ApRrN1duCd0u5/ec599f8322c79d29e61369930c54dbe9/d805801e-red-bus.png",
+			},
+			{
+				id: 2,
+				text: "Train: CHILTERN RAILWAYS, OVERGROUND, THAMESLINK, WEST MIDLANDS TRAINS",
+				icon: "https://images.ctfassets.net/1w1x9dft88u5/QpcAxfyw0etwkhIhw8NGh/02040a0306833bed7ddcb20e2e418857/75333f8a-national-rail.png",
+			},
+			{
+				id: 3,
+				text: "Underground: CENTRAL, METROPOLITAN, NORTHERN, VICTORIA",
+				icon: "https://images.ctfassets.net/1w1x9dft88u5/6xAhHaEblyFIIERYOS3hqv/004b318cc7a52c3984cb73213f6267aa/63e3a0c9-underground.png",
+			},
+		],
+	},
+	{
+		id: 2,
+		title: "By Car",
+		description:
+			"London has a Congestion Charge (which applies from 0700 hrs to 2200 hrs 7 days a week and requires drivers to pay £11.50 per day if they wish to continue driving in central London during these hours)",
+		icon: "https://images.ctfassets.net/1w1x9dft88u5/6eXR1vRROeUCBMtWMVOTg/35c7274f3c02fb404cdc9c0af6015778/b6872e97-london-parking-sign.png",
+		sections: [
+			{
+				id: 1,
+				title: "Parking spaces",
+				description: `<p>A parking space can usually be found in the Harley Street/Wimpole Street area. Charges are £4.90 per hour from 8:30am to 6:30pm Monday to Saturday. There is a maximum stay of four hours. Payment can be made by cash or credit card using the ticket machines, or by telephone or SMS text.</p>`,
+			},
+			{
+				id: 2,
+				title: "Car Parks",
+				description: `<p>There are two 24 hour car parks located very close to Harley Street.&nbsp;<a href="https://www.q-park.co.uk/en-gb/cities/london/harley-street/">Q-Park</a>&nbsp;provide safe, secure and reliable parking throughout central London and their Harley Street car park is open 24 hours and is located in Queen Anne Mews, W1G 9HF.To get an idea of costs, one hour parking is £7.50, and 24 hours is £41.There is another larger car park located at&nbsp;<a href="https://www.q-park.co.uk/en-gb/cities/london/oxford-street/">Cavendish Square</a>, W1G OPN again open 24 hours. Short term parking can be found on the surrounding streets. The Harley Street area is within the&nbsp;<a href="https://tfl.gov.uk/modes/driving/congestion-charge?cid=pp020">Congestion Charging Zone</a>&nbsp;which can be paid online or by phone.</p>`,
+			},
+		],
 	},
 ];

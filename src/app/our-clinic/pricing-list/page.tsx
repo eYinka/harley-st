@@ -26,17 +26,19 @@ export default async function Page() {
 				heading={pageData.heading}
 				description={pageData.description}
 			/>
-			<Spacer desktopHeight={"100px"} mobileHeight="70px" />
-			<div className="container mx-auto">
-				<RichText
-					content={pageData.pageIntro.content}
-					classNames="text-primary-dark text-xl text-center"
-				/>
-			</div>
-			<Spacer desktopHeight={"50px"} mobileHeight="50px" />
-      <PriceLists />
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<ContactBanner bgImage="/images/463bfd86-harley-street-ultrasound-team-are-here-to-help-bg.png" />
+			<main>
+				<Spacer desktopHeight={"100px"} mobileHeight="70px" />
+				<div className="container mx-auto">
+					<RichText
+						content={pageData.pageIntro.content}
+						classNames="text-primary-dark text-xl text-center"
+					/>
+				</div>
+				<Spacer desktopHeight={"50px"} mobileHeight="50px" />
+				<PriceLists />
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<ContactBanner bgImage="/images/463bfd86-harley-street-ultrasound-team-are-here-to-help-bg.png" />
+			</main>
 		</>
 	);
 }

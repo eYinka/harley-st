@@ -4,11 +4,12 @@ import clsx from "clsx";
 interface GradientButtonProps {
 	text: string;
 	classNames?: string;
+	type?: "button" | "submit" | "reset";
 	theme?: Theme;
 }
 
 export default function GradientButton(props: GradientButtonProps) {
-	const { text, classNames, theme } = props;
+	const { text, classNames, type ="button", theme } = props;
 
 	let gradientClasses;
 	switch (theme) {
@@ -36,6 +37,7 @@ export default function GradientButton(props: GradientButtonProps) {
 				gradientClasses,
 				classNames,
 			)}
+			type={type}
 		>
 			{text}
 		</button>

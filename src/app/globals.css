@@ -101,6 +101,20 @@
 		font-size: 16px;
 	}
 
+	.map-clip {
+		border: 1px solid rgba(15, 163, 227, 0.153);
+		border-radius: 28% 72% 62% 38% / 57% 79% 21% 43%;
+		overflow: hidden;
+	}
+
+	.underline-gradient {
+		background: linear-gradient(-45deg, #31e4c4 50%, #2084d0);
+	}
+
+	.hsug_prose{
+		@apply prose-headings:text-primary-dark prose-headings:font-serif prose-a:text-primary-dark marker:text-primary-dark text-gray-500;
+	}
+
 	@keyframes accordion-down {
 		from {
 			height: 0;

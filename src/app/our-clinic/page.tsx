@@ -38,29 +38,31 @@ export default function Page() {
 				heading={pageData.heading}
 				description={pageData.description}
 			/>
-			<Spacer desktopHeight="50px" mobileHeight="50px" />
-			<ValuesCard
-				title={pageData.valuesCard.title}
-				subtitle={pageData.valuesCard.subtitle}
-				description={pageData.valuesCard.description}
-				image={pageData.valuesCard.image}
-				theme={theme}
-				link="/our-clinic/our-values"
-				showReviews
-				showFeatures
-			/>
-			<Spacer desktopHeight="50px" mobileHeight="50px" />
-			<Specialists theme={theme} />
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<Regulators />
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<Faqs theme={theme} />
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<ContactBanner theme={theme} bgImage={pageData.bannerImage} bottomCurve/>
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<Articles theme={theme} />
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<SocialCta bgImage={pageData.socialCtaImage} />
+			<main>
+				<Spacer desktopHeight="50px" mobileHeight="50px" />
+				<ValuesCard
+					title={pageData.valuesCard.title}
+					subtitle={pageData.valuesCard.subtitle}
+					description={pageData.valuesCard.description}
+					image={pageData.valuesCard.image}
+					theme={theme}
+					link="/our-clinic/our-values"
+					showReviews
+					showFeatures
+				/>
+				<Spacer desktopHeight="50px" mobileHeight="50px" />
+				<Specialists theme={theme} />
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<Regulators />
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<Faqs theme={theme} />
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<ContactBanner theme={theme} bgImage={pageData.bannerImage} bottomCurve />
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<Articles theme={theme} />
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<SocialCta bgImage={pageData.socialCtaImage} />
+			</main>
 		</>
 	);
 }

@@ -22,10 +22,12 @@ export default async function Page(props: PageProps) {
 	return (
 		<>
 			<Header />
-			<Spacer desktopHeight={"50px"} mobileHeight="50px" />
-      <DoctorProfile profile={pageData} />
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<ContactBanner bgImage="/images/463bfd86-harley-street-ultrasound-team-are-here-to-help-bg.png" />
+			<main>
+				<Spacer desktopHeight={"50px"} mobileHeight="50px" />
+				<DoctorProfile profile={pageData} />
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<ContactBanner bgImage="/images/463bfd86-harley-street-ultrasound-team-are-here-to-help-bg.png" />
+			</main>
 		</>
 	);
 }

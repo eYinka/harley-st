@@ -21,17 +21,17 @@ export default function Footer() {
 			heading: "Quick Links",
 			links: [
 				{ title: "Book Online", link: "#" },
-				{ title: "For Clinicians", link: "#" },
-				{ title: "Frequently Asked Questions", link: "#" },
+				{ title: "For Clinicians", link: "/for-clinicians" },
+				{ title: "Frequently Asked Questions", link: "/faq" },
 			],
 		},
 		{
 			heading: null,
 			links: [
-				{ title: "Feedback & Suggestions", link: "#" },
-				{ title: "Terms & Conditions", link: "#" },
-				{ title: "Privacy Policy", link: "#" },
-				{ title: "Cookies Policy", link: "#" },
+				{ title: "Feedback & Suggestions", link: "/patient-feedback" },
+				{ title: "Terms & Conditions", link: "/terms-conditions" },
+				{ title: "Privacy Policy", link: "/privacy-policy" },
+				{ title: "Cookies Policy", link: "/cookie-policy" },
 			],
 		},
 	];

@@ -123,36 +123,38 @@ export default function Page() {
 				description={pageData.description}
 			/>
 			<Spacer desktopHeight="50px" mobileHeight="50px" />
-			<ValuesCard
-				title={pageData.valuesCard.title}
-				subtitle={pageData.valuesCard.subtitle}
-				description={pageData.valuesCard.description}
-				image={pageData.valuesCard.image}
-				theme={theme}
-				link="/our-clinic/our-values"
-			/>
-			<Spacer desktopHeight="60px" mobileHeight="60px" />
-			<SectionIntro
-				title={pageData?.pageIntro?.title}
-				subtitle={pageData?.pageIntro?.subtitle}
-				content={pageData?.pageIntro?.content}
-				theme={theme}
-			/>
-			<Spacer desktopHeight="40px" mobileHeight="20px" />
-			<ValueFeatureGrid items={pageData.valuesGrid} />
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<BannerAlt
-				title={pageData?.bannerTitle}
-				content={pageData?.banner.content}
-				image={pageData?.banner.image}
-				bgImage={pageData?.banner.background}
-			/>
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<Regulators btnLink="#" btnText="Our Doctors" />
-			<Spacer mobileHeight="80px" desktopHeight="100px" />
-			<CoreValues {...pageData.coreValues} />
-			<Spacer mobileHeight="80px" desktopHeight="150px" />
-			<SocialCta bgImage={pageData.socialCtaImage} />
+			<main>
+				<ValuesCard
+					title={pageData.valuesCard.title}
+					subtitle={pageData.valuesCard.subtitle}
+					description={pageData.valuesCard.description}
+					image={pageData.valuesCard.image}
+					theme={theme}
+					link="/our-clinic/our-values"
+				/>
+				<Spacer desktopHeight="60px" mobileHeight="60px" />
+				<SectionIntro
+					title={pageData?.pageIntro?.title}
+					subtitle={pageData?.pageIntro?.subtitle}
+					content={pageData?.pageIntro?.content}
+					theme={theme}
+				/>
+				<Spacer desktopHeight="40px" mobileHeight="20px" />
+				<ValueFeatureGrid items={pageData.valuesGrid} />
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<BannerAlt
+					title={pageData?.bannerTitle}
+					content={pageData?.banner.content}
+					image={pageData?.banner.image}
+					bgImage={pageData?.banner.background}
+				/>
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<Regulators btnLink="#" btnText="Our Doctors" />
+				<Spacer mobileHeight="80px" desktopHeight="100px" />
+				<CoreValues {...pageData.coreValues} />
+				<Spacer mobileHeight="80px" desktopHeight="150px" />
+				<SocialCta bgImage={pageData.socialCtaImage} />
+			</main>
 		</>
 	);
 }

@@ -15,11 +15,11 @@ import clsx from "clsx";
 
 interface TestimonialProps {
 	theme?: Theme;
-	showExternalReviws?: boolean;
+	showExternalReviews?: boolean;
 }
 
 export default function Testimonials(props: TestimonialProps) {
-	const { showExternalReviws, theme } = props;
+	const { showExternalReviews, theme } = props;
 
 	const swiperRef = useRef<SwiperType | null>(null);
 
@@ -104,7 +104,7 @@ export default function Testimonials(props: TestimonialProps) {
 					))}
 				</Swiper>
 			</div>
-			{showExternalReviws && (
+			{showExternalReviews && (
 				<div className="flex justify-center">
 					<ReviewsCard />
 				</div>
